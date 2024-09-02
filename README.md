@@ -5,6 +5,8 @@ working local folder is
 
 
 https://bumstigedy.github.io/ai-agents-analyze-spx/
+
+
 files
 
 analysis*** resulting analysis time stamped by day run
