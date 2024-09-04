@@ -11,15 +11,24 @@ from crewai import Agent, Task, Crew
 from ta_analysis_tool import TechnicalAnalysisTools
 #
 from langchain_openai import ChatOpenAI
+from langchain_anthropic import ChatAnthropic
 ########------------------> INPUT FOLDER PATHS <------------------------
 # reminded------->reset dropbox api------>
 folder_paths = [
-    "/current/2024/august/aug 27/goldman/s&t",
-    "/current/2024/august/aug 27/nomura (mcelligott)",
-    "/current/2024/august/aug 27/goldman/prime"]
+    "<insert first folder name>",
+    "<insert second folder name>",
+    "insert third folder name"]
 ########################################################################
 # add model in case we want to change the llm model or the temperature #
-LLM_model=ChatOpenAI(model_name="gpt-4-turbo",temperature=0.7)
+# LLM_model=ChatOpenAI(model_name="gpt-4-turbo",temperature=0.7)
+# use claude as it gives much better results
+
+LLM_model = ChatAnthropic(
+    model="claude-3-5-sonnet-20240620",
+    temperature=0.7,
+    timeout=None,
+    max_retries=2,
+)
 #
 # delete all existing pdf files 
 # Get all PDF files in the current directory
@@ -69,7 +78,8 @@ TA_analyst = Agent(
     backstory="""You're an experienced financial analyst specializing in technical analysis.  You have years of experience on wall street adn are a Certified Market
      Technicial or CMT You are good at distilling techincal market indicators into concise market summaries that traders can understand
      and act on""" + ta_context,
-    tools=[TechnicalAnalysisTools()]
+    tools=[TechnicalAnalysisTools()],
+    llm =LLM_model
 )
 #################################################
 pdf_path = "merged.pdf"
@@ -85,7 +95,8 @@ hedge_fund_analyst = Agent(
             5. Provide a detailed and insightful analysis based on the information given.""",
     backstory="""You are a highly experienced financial analyst providing analysis and recommendations to traders. You have years of experience at 
     hedge funds and working on Wall Street. Analyze and summarize the following market report:
-                    """ + pdf_content
+                    """ + pdf_content,
+    llm =LLM_model
                     #[:4000] # Limit content to 4000 characters to fit within token limits
     
 )
@@ -98,7 +109,9 @@ writer = Agent (
     Your clients include professional buy side investors as well as retail investors and traders. """,
     verbose=True,
     allow_delegation=True,
-    max_iter=25)
+    llm =LLM_model,
+    max_iter=25,
+    )
 
 #######################################
 # Define the TA analysis task
