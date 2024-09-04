@@ -6,7 +6,7 @@ This project utilizes AI agents to perform comprehensive market analysis on the 
 
 ## Live Demo
 
-Check out a live demo showcasing an example conversation between AI agents:
+Check out our live demo showcasing an example conversation between AI agents:
 
 [https://bumstigedy.github.io/ai-agents-analyze-spx/](https://bumstigedy.github.io/ai-agents-analyze-spx/)
 
@@ -38,6 +38,35 @@ Check out a live demo showcasing an example conversation between AI agents:
    - A Financial/Fundamental Analyst agent examines the hedge fund reports.
    - A Professional Finance Writer agent synthesizes insights from both analyses.
 5. The final output is a comprehensive market analysis, including current trends, potential risks, and trade recommendations.
+
+## AI Agents
+
+### Technical Analyst
+- **Role**: Analyze S&P 500 technical indicators
+- **Backstory**: An experienced financial analyst specializing in technical analysis with years of Wall Street experience and CMT certification
+- **Tools**: TechnicalAnalysisTools (custom tool for calculating and interpreting technical indicators)
+- **Knowledge Base**: Comprehensive information on technical analysis and indicators (provided in TA_context.txt)
+
+### Financial/Fundamental Analyst
+- **Role**: Analyze hedge fund reports and provide fundamental market insights
+- **Backstory**: Highly experienced financial analyst with years of experience at hedge funds and on Wall Street
+- **Knowledge Base**: Content from downloaded and processed hedge fund reports
+
+### Professional Finance Short-Article Writer
+- **Role**: Summarize market information from both analysts into concise, actionable content
+- **Backstory**: Renowned financial writer with a proven track record of summarizing market conditions, risks, and trading opportunities for professional and retail investors
+
+## Crew Task
+
+The AI agents work together as a crew to produce a comprehensive market analysis. Their tasks include:
+
+1. Analyzing S&P 500 technical indicators and providing insights
+2. Examining current market drivers, identifying risks, and spotting trading opportunities based on hedge fund reports
+3. Synthesizing information from both analyses into a concise, actionable blog post
+
+## Development Process
+
+The majority of the coding for this project was done using Claude Dev within Visual Studio Code, leveraging AI assistance for efficient development and problem-solving.
 
 ## Dependencies
 
