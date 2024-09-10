@@ -142,3 +142,184 @@ Shorter moving averages (5-20 periods) are suitable for short-term trends and tr
 Moving averages can be used to generate trading signals. One of the most basic techniques is that of using crossovers. A bullish crossover occurs when a shorter moving average crosses above a longer moving average, indicating a potential buying opportunity. A bearish crossover occurs when a shorter moving average crosses below a longer moving average, indicating a potential selling opportunity. Note that there are several other ways to use moving averages to generate trading signals.
 
 </Moving Averages>
+
+<MACD>
+MACD (Moving Average Convergence/Divergence) Oscillator
+Learn how the MACD (Moving Average Convergence/Divergence) oscillator enhances technical analysis by measuring momentum and trend direction. Discover its application for informed trading decisions.
+
+What Is the Moving Average Convergence/Divergence Oscillator?
+Developed by Gerald Appel in the late seventies, the Moving Average Convergence/Divergence oscillator (MACD), due to its simplicity and general effectiveness, is one of the most popular momentum indicators. The MACD turns two trend-following indicators, moving averages, into a momentum oscillator by subtracting the longer moving average from the shorter one. As a result, the MACD offers the best of both worlds: trend following and momentum. The MACD fluctuates above and below the zero line as the moving averages converge, cross and diverge. Traders can look for signal line crossovers, centerline crossovers and divergences to generate signals. Because the MACD is unbounded, it is not particularly useful for identifying overbought and oversold levels.
+How Do You Calculate the MACD?
+Copy
+MACD Line: (12-day EMA - 26-day EMA)
+
+Signal Line: 9-day EMA of MACD Line
+
+MACD Histogram: MACD Line - Signal Line
+The MACD line is the 12-day Exponential Moving Average (EMA) less the 26-day EMA. Closing prices are used for these moving averages. A nine-day EMA of the MACD line is plotted with the indicator, which acts as a signal line and identifies reversals. The MACD Histogram represents the difference between MACD and its nine-day EMA, the signal line. The histogram is positive when the MACD line is above its signal line and negative when the MACD line is below its signal line.
+
+The values of 12, 26, and 9 are the typical settings used with the MACD, though other values can be substituted depending on your trading style and goals.
+How Do You Interpret the MACD?
+Convergence/Divergence
+As its name implies, the MACD is all about the convergence and divergence of the two moving averages. Convergence occurs when the moving averages move towards each other. Divergence occurs when the moving averages move away from each other. The shorter moving average (12-day) is faster and responsible for most MACD movements. The longer moving average (26-day) is slower and less reactive to price changes in the underlying security.
+
+Oscillator
+The MACD line oscillates above and below the zero line, also known as the centerline. These crossovers signal that the 12-day EMA has crossed the 26-day EMA. The direction, of course, depends on the direction of the moving average cross. Positive MACD indicates that the 12-day EMA is above the 26-day EMA. Positive values increase as the shorter EMA diverges further from the longer EMA. This means upside momentum is increasing. Negative MACD values indicate the 12-day EMA is below the 26-day EMA. Negative values increase as the shorter EMA diverges further below the longer EMA. This means downside momentum is increasing.
+In the example above, the golden shaded area shows the MACD line in negative territory as the 12-day EMA trades below the 26-day EMA. In mid-February, the MACD moved further into negative territory as the 12-day EMA diverged further from the 26-day EMA. The red area highlights a period of positive MACD values, when the 12-day EMA was above the 26-day EMA.
+
+Signal Line Crossovers
+Signal line crossovers are the most common MACD signals. The signal line is a 9-day EMA of the MACD line. As a moving average of the indicator, it trails the MACD and makes it easier to spot MACD turns. A bullish crossover occurs when the MACD turns up and crosses above the signal line. A bearish crossover occurs when the MACD turns down and crosses below the signal line. Crossovers can last a few days or a few weeks, depending on the strength of the move.
+
+Due diligence is required before relying on these common signals. Signal line crossovers at positive or negative extremes should be viewed with caution. Even though the MACD does not have upper and lower limits, chartists can estimate historical extremes with a simple visual assessment. It takes a strong move in the underlying security to push momentum to an extreme. Even though the move may continue, momentum is likely to slow and this will usually produce a signal line crossover at the extremities. Volatility in the underlying security can also increase the number of crossovers.
+
+The chart below shows IBM with its 12-day EMA (green), 26-day EMA (red) and the 12,26,9 MACD in the indicator window. There were eight signal line crossovers in six months: four up and four down. There were some good signals and some bad signals. The yellow area highlights a period when the MACD line surged above 2 to reach a positive extreme. There were two bearish signal line crossovers in April and May, but IBM continued trending higher. Even though upward momentum slowed after the surge, it was still stronger than downside momentum in April-May. The third bearish signal line crossover in May resulted in a good signal.
+Centerline Crossovers
+Centerline crossovers are the next most common MACD signals. A bullish centerline crossover occurs when the MACD line moves above the zero line to turn positive. This happens when the 12-day EMA of the underlying security moves above the 26-day EMA. A bearish centerline crossover occurs when the MACD moves below the zero line to turn negative. This happens when the 12-day EMA moves below the 26-day EMA.
+
+Centerline crossovers can last a few days or a few months, depending on the strength of the trend. The MACD will remain positive as long as there is a sustained uptrend. The MACD will remain negative when there is a sustained downtrend. The next chart shows Pulte Homes (PHM) with at least four centerline crosses in nine months. The resulting signals worked well because strong trends emerged with these centerline crossovers.
+Divergences
+Divergences form when the MACD diverges from the price action of the underlying security. A bullish divergence forms when a security records a lower low and the MACD forms a higher low. The lower low in the security affirms the current downtrend, but the higher low in the MACD shows less downside momentum. Despite decreasing, downside momentum is still outpacing upside momentum as long as the MACD remains in negative territory. Slowing downside momentum can sometimes foreshadow a trend reversal or a sizable rally.
+
+The next chart shows Google (GOOG) with a bullish divergence in October-November 2008. First, notice that we are using closing prices to identify the divergence. The MACD's moving averages are based on closing prices and we should consider closing prices in the security as well. Second, notice that there were clear reaction lows (troughs) as both Google and its MACD line bounced in October and late November. Third, notice that the MACD formed a higher low as Google formed a lower low in November. The MACD turned up with a bullish divergence and a signal line crossover in early December. Google confirmed a reversal with a resistance breakout.
+A bearish divergence forms when a security records a higher high and the MACD line forms a lower high. The higher high in the security is normal for an uptrend, but the lower high in the MACD shows less upside momentum. Even though upside momentum may be less, upside momentum is still outpacing downside momentum as long as the MACD is positive. Waning upward momentum can sometimes foreshadow a trend reversal or sizable decline.
+
+Below we see Gamestop (GME) with a large bearish divergence from August to October. The stock forged a higher high above 28, but the MACD line fell short of its prior high and formed a lower high. The subsequent signal line crossover and support break in the MACD were bearish. On the price chart, notice how broken support turned into resistance on the throwback bounce in November (red dotted line). This throwback provided a second chance to sell or sell short.
+Divergences should be taken with caution. Bearish divergences are commonplace in a strong uptrend, while bullish divergences occur often in a strong downtrend. Yes, you read that right. Uptrends often start with a strong advance that produces a surge in upside momentum (MACD). Even though the uptrend continues, it continues at a slower pace that causes the MACD to decline from its highs. Upside momentum may not be as strong, but it will continue to outpace downside momentum as long as the MACD line is above zero. The opposite occurs at the beginning of a strong downtrend.
+
+The next chart shows the S&P 500 ETF (SPY) with four bearish divergences from August to November 2009. Despite less upside momentum, the ETF continued higher because the uptrend was strong. Notice how SPY continued its series of higher highs and higher lows. Remember, upside momentum is stronger than downside momentum as long as the MACD is positive. The MACD (momentum) may have been less positive (strong) as the advance extended, but it was still largely positive.
+The Bottom Line
+The MACD indicator is special because it brings together momentum and trend in one indicator. This unique blend of trend and momentum can be applied to daily, weekly or monthly charts. The standard setting for MACD is the difference between the 12- and 26-period EMAs. Chartists looking for more sensitivity may try a shorter short-term moving average and a longer long-term moving average. MACD(5,35,5) is more sensitive than MACD(12,26,9) and might be better suited for weekly charts. Chartists looking for less sensitivity may consider lengthening the moving averages. A less sensitive MACD will still oscillate above/below zero, but the centerline crossovers and signal line crossovers will be less frequent.
+
+The MACD is not particularly good for identifying overbought and oversold levels. Even though it is possible to identify levels that are historically overbought or oversold, the MACD does not have any upper or lower limits to bind its movement. During sharp moves, the MACD can continue to over-extend beyond its historical extremes.
+
+Finally, remember that the MACD line is calculated using the actual difference between two moving averages. This means MACD values are dependent on the price of the underlying security. The MACD values for a $20 stocks may range from -1.5 to 1.5, while the MACD values for a $100 may range from -10 to +10. It is not possible to compare MACD values for a group of securities with varying prices. If you want to compare momentum readings, you should use the Percentage Price Oscillator (PPO), instead of the MACD.
+
+</MACD>
+
+<RSI>
+Relative Strength Index (RSI)
+Explore the Relative Strength Index (RSI) and its pivotal role in technical analysis. Learn how RSI measures price momentum and identifies overbought or oversold conditions.
+
+What Is the Relative Strength Index (RSI)?
+The RSI, a momentum oscillator developed by J. Welles Wilder, measures the speed and change of price movements. The RSI moves up and down (oscillates) between zero and 100. When the RSI is above 70, it generally indicates overbought conditions; when the RSI is below 30, it indicates oversold conditions. The RSI also generates trading signals via divergences, failure swings, and centerline crossovers. You could also use the RSI to identify the general trend.
+
+RSI is a popular momentum indicator that has been featured in a number of articles, interviews, and books over the years. In particular, Constance Brown's book, Technical Analysis for the Trading Professional, features the concept of bull and bear market ranges for RSI. Andrew Cardwell, Brown's RSI mentor, introduced positive and negative reversals for RSI and turned the notion of divergence, literally and figuratively, on its head.
+
+Wilder features RSI in his 1978 book, New Concepts in Technical Trading Systems. This book also includes the Parabolic SAR, Average True Range, and the Directional Movement Concept (ADX). Despite being developed before the computer age, Wilder's indicators have stood the test of time and continue to be applied by chart analysts.
+Calculating the RSI
+Copy
+                  100
+    RSI = 100 - --------
+                 1 + RS
+
+    RS = Average Gain / Average Loss
+There are three basic components in the RSI—RS, Average Gain, and Average Loss. This RSI calculation is based on 14 periods, the default Wilder suggested in his book. Losses are expressed as positive values, not negative values.
+
+The first calculations for average gain and average loss are simple 14-period averages:
+
+First Average Gain = Sum of Gains over the past 14 periods / 14.
+
+First Average Loss = Sum of Losses over the past 14 periods / 14.
+
+The second and subsequent, calculations are based on the prior averages and the current gain loss:
+
+Average Gain = [(previous Average Gain) x 13 + current Gain] / 14.
+
+Average Loss = [(previous Average Loss) x 13 + current Loss] / 14.
+
+Taking the prior value plus the current value is a smoothing technique similar to calculating an exponential moving average. This also means RSI values become more accurate as the calculation period extends. SharpCharts uses at least 250 data points before the starting date of any chart (assuming that much data exists) when calculating its RSI values. A formula will need at least 250 data points to replicate our RSI numbers.
+
+Wilder's formula normalizes RS and turns it into an oscillator that fluctuates between zero and 100. The normalization step makes it easier to identify extremes because RSI is range-bound. When the Average Gain equals zero, RSI is zero. So, if you're using a 14-period RSI, a zero RSI value means prices moved lower in all 14 periods. There were no gains to measure. RSI is 100 when the Average Loss equals zero. This means prices moved higher in all 14 periods, and there were no losses to measure.
+What Are the Best RSI Parameters?
+The default look-back period for RSI is 14, but you can lower it to increase sensitivity or raise it to decrease sensitivity. A 10-day RSI is more likely to reach overbought or oversold levels than a 20-day RSI. The look-back parameters also depend on a security's volatility. The 14-day RSI for a volatile stock such as Amazon (AMZN) is more likely to become overbought or oversold than a 14-day RSI for a utility company such as Duke Energy (DUK).
+
+The traditional overbought and oversold levels can be adjusted to better fit the security or analytical requirements. Raising the overbought threshold to 80 or lowering the oversold threshold to 20 could reduce the number of overbought/oversold readings. Short-term traders sometimes use 2-period RSI to look for overbought readings above 80 and oversold readings below 20.
+
+Overbought and Oversold RSI Levels
+Wilder considered RSI overbought above 70 and oversold below 30. Chart 3 shows McDonalds with 14-day RSI. This chart features daily bars in gray with a one-day SMA in pink to highlight closing prices (as RSI is based on closing prices). Working from left to right, the stock became oversold in late July and found support around 44 (1).
+
+Notice that the bottom evolved after the oversold reading. Bottoming can be a process—this stock did not bottom as soon as the oversold reading appeared. From oversold levels, RSI moved above 70 in mid-September to become overbought. Despite this overbought reading, the stock did not decline; instead, it stalled for a couple weeks and then continued higher.
+
+Three more overbought readings occurred before the stock finally peaked in December (2). Momentum oscillators can become overbought (oversold) and remain so in a strong up (down) trend. The first three overbought readings foreshadowed consolidations. The fourth coincided with a significant peak. RSI then moved from overbought to oversold in January. The stock ultimately bottomed around 46 a few weeks later (3); the final bottom did not coincide with the initial oversold reading.
+Like many momentum oscillators, overbought and oversold readings for RSI work best when prices move sideways within a range. Chart 4 shows MEMC Electronics (WFR) trading between 13.5 and 21 from April to September 2009. The stock peaked soon after RSI reached 70 and bottomed soon after the stock reached 30.
+Bullish and Bearish Divergences in RSI
+According to Wilder, divergences signal a potential reversal point because directional momentum does not confirm price. A bullish divergence occurs when the underlying security makes a lower low, and RSI forms a higher low. RSI does not confirm the lower low, and this shows strengthening momentum. A bearish divergence forms when the security records a higher high and RSI forms a lower high. RSI does not confirm the new high and this shows weakening momentum. 
+
+Chart 5 shows Ebay (EBAY) with a bearish divergence in August–October. The stock moved to new highs in September–October, but RSI formed lower highs for the bearish divergence. The subsequent breakdown in mid-October confirmed weakening momentum.
+A bullish divergence formed in January–March. The bullish divergence formed with eBay moving to new lows in March and RSI holding above its prior low. RSI reflected less downside momentum during the February-March decline. The mid-March breakout confirmed improving momentum. Divergences tend to be more robust when they form after an overbought or oversold reading.
+
+Before getting too excited about divergences as great trading signals, it must be noted that divergences are misleading in a strong trend. A strong uptrend can show numerous bearish divergences before a top materializes. 
+
+Conversely, bullish divergences can appear in a strong downtrend, yet the downtrend continues. Chart 6 shows the SPDR S&P 500 ETF (SPY) with three bearish divergences and a continuing uptrend. These bearish divergences may have warned of a short-term pullback, but there was clearly no major trend reversal.
+RSI Failure Swings
+Wilder also considered failure swings as strong indications of an impending reversal. Failure swings are independent of price action, focusing solely on RSI for signals and ignoring the concept of divergences. A bullish failure swing forms when RSI moves below 30 (oversold), bounces above 30, pulls back, holds above 30 and then breaks its prior high. It is basically a move to oversold levels and then a higher low above oversold levels. Chart 7 shows Research in Motion (RIMM) with 10-day RSI forming a bullish failure swing.
+How To Use RSI To Identify Trends
+In Technical Analysis for the Trading Professional, Constance Brown suggests that oscillators do not travel between 0 and 100. This also happens to be the name of the first chapter. Brown identifies a bull market range and a bear market for RSI. RSI tends to fluctuate between 40 and 90 in a bull market (uptrend) with the 40–50 zones acting as support. These ranges may vary depending on RSI parameters, strength of trend and volatility of the underlying security. Chart 9 shows 14-week RSI for SPY during the bull market from 2003 until 2007. RSI surged above 70 in late 2003 and then moved into its bull market range (40–90). There was one overshoot below 40 in July 2004, but RSI held the 40–50 zone at least five times from January 2005 until October 2007 (green arrows). In fact, notice that pullbacks to this zone provided low risk entry points to participate in the uptrend.
+On the flip side, RSI tends to fluctuate between 10 and 60 in a bear market (downtrend) with the 50-60 zone acting as resistance. Chart 10 shows 14-day RSI for the US Dollar Index ($USD) during its 2009 downtrend. RSI moved to 30 in March to signal the start of a bear range. The 50–60 zone subsequently marked resistance until a breakout in December.
+Identifying Positive and Negative Reversals With RSI
+Andrew Cardwell developed positive and negative reversals for RSI, which are the opposite of bearish and bullish divergences. Cardwell's books are out of print, but he offers seminars detailing these methods. Cardwell's interpretation of divergences differs from Wilder's. Cardwell considered bearish divergences to be bull market phenomena. In other words, bearish divergences are more likely to form in uptrends. Similarly, bullish divergences are considered bear market phenomena and are indicative of a downtrend.
+
+A positive reversal forms when RSI forges a lower low, and the security forms a higher low. This lower low is not at oversold levels but is usually between 30 and 50. Chart 11 shows MMM with a positive reversal forming in June 2009. MMM broke resistance a few weeks later, and RSI moved above 70. Despite weaker momentum with a lower low in RSI, MMM held above its prior low and showed underlying strength. In essence, price action overruled momentum.
+A negative reversal is the opposite of a positive reversal. RSI forms a higher high, but the security forms a lower high. Again, the higher high is usually just below overbought levels in the 50-70 area. Chart 12 shows Starbucks (SBUX) forming a lower high as RSI forms a higher high. Even though RSI forged a new high and momentum was strong, the price action failed to confirm as lower high formed. This negative reversal foreshadowed the big support break in late June and sharp decline.
+The Bottom Line
+RSI is a versatile momentum oscillator that has stood the test of time. Despite changes in volatility and the markets, RSI remains as relevant now as it was in Wilder's days. While Wilder's original interpretations help understand the indicator, the work of Brown and Cardwell takes RSI interpretation to a new level. But adjusting to this level takes some rethinking.
+
+Wilder considers overbought conditions ripe for a reversal, but overbought can also be a sign of strength. Bearish divergences still produce some good sell signals, but you must be careful in strong trends when bearish divergences are normal. Even though the concept of positive and negative reversals may seem to undermine Wilder's interpretation, the logic makes sense. Wilder would hardly dismiss the value of putting more emphasis on price action. Positive and negative reversals put price action of the underlying security first and the indicator second, which is how it should be. Bearish and bullish divergences place the indicator first and price action second. By emphasizing price action, the concept of positive and negative reversals challenges our thinking toward momentum oscillators.
+</RSI>
+
+<Support and Resistance>
+Support & Resistance
+Explore the fundamentals of support and resistance levels in stock chart analysis. StockCharts ChartSchool offers you the resources to empower you with the knowledge to navigate the stock market.
+
+Support and Resistance—In Simple Words
+Support and resistance levels represent key junctures where supply and demand meet. In the financial markets, prices are driven by excesses of supply (down) and demand (up). Supply is synonymous with bearish, bears, and selling. Demand is synonymous with bullish, bulls, and buying. These terms are used interchangeably throughout this and other articles. As demand increases, prices advance, and as supply increases, prices decline. When supply and demand are equal, prices move sideways as bulls and bears slug it out to gain control.
+
+What Is Support?
+Support is the price level at which demand is thought to be strong enough to prevent the price from declining further. The logic dictates that as the price declines towards support and gets cheaper, buyers become more inclined to buy and sellers become less inclined to sell. By the time the price reaches the support level, it is believed that demand will overcome supply and prevent the price from falling below support.
+Support does not always hold, however, and a break below support signals that the bears have won out over the bulls. A decline below support indicates a new willingness to sell and/or a lack of incentive to buy. Support breaks and new lows signal that sellers have reduced their expectations and are willing sell at even lower prices. In addition, buyers could not be coerced into buying until prices declined below support or below the previous low. Once support is broken, another support level will have to be established at a lower level.
+
+Where Is Support Established?
+Support levels are usually below the current price, but it is not uncommon for a security to trade at or near support. As technical analysis is not an exact science, setting precise support levels can often be difficult. In addition, price movements can be volatile and briefly dip below support. For example, it does not seem logical to consider a support level broken if the price closes an eighth below the established support level. For this reason, some traders and investors establish support zones.
+What Is Resistance?
+Resistance is the price level at which selling is thought to be strong enough to prevent the price from rising further. Logic dictates that, as the price advances towards resistance, sellers become more inclined to sell and buyers become less inclined to buy. By the time the price reaches the resistance level, it is believed that supply will overcome demand and prevent the price from rising above resistance.
+Resistance does not always hold; a break above resistance signals that the bulls have won out over the bears. A break above resistance shows a new willingness to buy and/or a lack of incentive to sell. Resistance breaks and new highs indicate buyers have increased their expectations and are willing to buy at even higher prices. In addition, sellers could not be coerced into selling until prices rose above resistance or above the previous high. Once resistance is broken, another resistance level will have to be established at a higher level.
+
+Where Is Resistance Established?
+Resistance levels are usually above the current price, but it is not uncommon for a security to trade at or near resistance. In addition, price movements can be volatile and rise above resistance briefly. Sometimes it does not seem logical to consider a resistance level broken if the price closes 1/8 above the established resistance level. For this reason, some traders and investors establish resistance zones.
+
+Methods to Establish Support and Resistance?
+Support and resistance share enough common characteristics to be mirror images of each other.
+Highs and Lows
+Support can be established with the previous reaction lows, while resistance can be established by using the previous reaction highs.
+
+The below chart of Halliburton (HAL) shows a large trading range between Dec-99 and Mar-00. Support was established with the October low around 31. In December, the stock returned to support in the mid-thirties and formed a low of around 33. Finally, in February, the stock again returned to the support scene and formed a low of around 32 1/2.
+After each bounce off a support level, the stock traded up to resistance. Resistance was first established by the September support break at 42.5. After a support level is broken, it can turn into a resistance level. The stock advanced to the new support-turned-resistance level of around 42.5 from the October lows. The resistance level was confirmed when the stock failed to advance past 42.5. The stock traded up to 42.5 twice after that and failed to surpass resistance.
+Support Equals Resistance
+Another principle of technical analysis stipulates that support can turn into resistance and vice versa. Once the price breaks below a support level, the broken support level can turn into resistance. The break of support signals that the forces of supply have overcome the forces of demand. Therefore, if the price returns to this level, there is likely to be an increase in supply, hence resistance.
+
+The other turn of the coin is resistance turning into support. As the price advances above resistance, it signals changes in supply and demand. The breakout above resistance proves that the forces of demand have overwhelmed the forces of supply; if the price returns to this level, demand will likely increase, and support will be found.
+
+The NASDAQ 100 Index ($NDX) broke resistance at 935 in May-97 and traded just above this resistance level for over a month (see chart below). As the index remained above resistance, 935 was established as a new support level. The stock rose to 1150 but fell back to test support at 935. After the second test of support at 935, this level is well established.
+In the chart below, you see that support can turn into resistance and then back into support. PeopleSoft found support at 18 from Oct-98 to Jan-99 (green oval) but broke below support in Mar-99 as the bears overpowered the bulls. When the stock rebounded (red oval), there was still overhead supply at 18, and resistance was met from Jun-99 to Oct-99.
+Where does this overhead supply come from? Demand was obviously increasing around 18 from Oct-98 to Mar-99 (green oval). Therefore, there were a lot of bullish buyers of the stock around 18. When the price declined below 18 and fell to around 14, many of these (now unhappy) bulls were probably still holding the stock. This left a supply overhang (commonly known as resistance) around 18. When the stock rebounded to 18, many green-oval-bulls probably took the opportunity to sell and “escape” with little to no loss. When this supply was exhausted, the demand could overpower supply and advance above resistance at 18.
+
+Trading Range
+Trading ranges can be important in determining whether support and resistance function as turning points or continuation patterns. A trading range is when prices move within a relatively tight range. This signals that the forces of supply and demand are evenly balanced. When the price breaks out of the trading range, above or below, it signals that a winner has emerged. A break above is a victory for the bulls (demand), and a break below is a victory for the bears (supply).
+
+After an extended advance from 27 to 64, WorldCom (WCOM) entered a trading range between 55 and 63 for about five months. There was a false breakout in mid-June when the stock briefly poked its head above 62 (red oval). This did not last long, and a gap down a few days later nullified the breakout (black arrow). The stock then proceeded to break support at 55 in Aug-99 and trade as low as 50. 
+The stock bounced off 55 two more times before heading lower (support turning to resistance). While this doesn't always happen, a return to the new resistance level offers a second chance for longs to get out and shorts to enter the fray.
+
+In Nov/Dec-99, Lucent Technologies (LU) formed a trading range that resembled a head and shoulders pattern (red oval). When the stock broke support at 60, there was little or no time to exit. Even though a long black candlestick indicates an open at 59, the stock fell so fast that it was impossible to exit above 44. In hindsight, the support line could have been drawn as an upward-sloping neckline (blue line), and the support break would have come at 61. This is only one point higher; a trader must take action immediately to avoid a sharp fall. However, the lows match up nicely with the neckline, which is something to consider when drawing support lines.
+After Lucent declined, a trading range was established between 40.5 and 47.5 for almost two months (green oval). The resistance level of the trading range was well-marked by three reaction peaks at 47.5. The support level was not as clearly marked but is between 40 and 41. Some buying interest began to become evident around 44 in mid-to-late February. Notice the many candlesticks with long lower shadows, or hammers, as they are known. The stock then formed two up gaps on 24-Feb and 25-Feb and finally closed above resistance at 48. This was a clear indication of demand winning out over supply. There were still two more opportunities (days) to get in on the action. On the third day after the breakout, the stock gapped up and moved above 56.
+
+What Are Support and Resistance Zones?
+Because technical analysis is not an exact science, creating support and resistance zones is useful. This contradicts the strategy mapped out for Lucent Technologies (LU), but it is sometimes the case. 
+
+Each security has its characteristics, and analysis should reflect the intricacies of the security. Sometimes, exact support and resistance levels are best, and sometimes, zones work better. Generally, the tighter the range, the more exact the level. If the trading range spans less than two months and the price range is relatively tight, then more exact support and resistance levels are best suited. If a trading range spans many months and the price range is relatively large, it's best to use support and resistance zones. These are only general guidelines, and each trading range should be judged on its own merits.
+
+Returning to the Halliburton (HAL) analysis, you can see that the November high of the trading range (32 to 44) extended more than 20% past the October low, making the range quite large relative to the price. Because the September support break forms the first resistance level, you're ready to set up a resistance zone after the November high is formed, probably around early December. However, it's difficult to tell if a large trading range will develop. 
+The subsequent low in December, which was just higher than the October low, offers evidence that a trading range is forming, and we are ready to set the support zone. As long as the stock trades within the boundaries set by the support and resistance zone, we will consider the trading range to be valid. Support may be looked upon as an opportunity to buy, and resistance as an opportunity to sell.
+
+The Bottom Line
+Identification of key support and resistance levels is an essential ingredient to successful technical analysis. Even though it's sometimes difficult to establish exact support and resistance levels, knowing their existence and location can greatly enhance analysis and forecasting abilities. If a security is approaching an important support level, it can serve as an alert to be extra vigilant in looking for signs of increased buying pressure and a potential reversal. If a security approaches a resistance level, it can act as an alert to signs of increased selling pressure and potential reversal. If a support or resistance level is broken, the relationship between supply and demand has changed. A resistance breakout signals that the bulls (demand) have gained the upper hand, and a support break signals that the bears (supply) have won the battle.
+</Support and Resistance>

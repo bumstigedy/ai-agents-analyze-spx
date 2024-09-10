@@ -9,13 +9,13 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 class TechnicalAnalysisTools(BaseTool):
-    name: str = "Analyze Stock Technical Indicators"
+    name: str = "Analyze Stock Technical Indicators for input ticker"
     description: str = "Analyzes stock technical indicators and provides insights."
 
     def __init__(self, **data):
         super().__init__(**data)
 
-    def _run(self, symbol: str = "^GSPC", period: str = "1y") -> str:
+    def _run(self, symbol: str, period: str = "1y") -> str:
         """Analyzes stock technical indicators and provides insights."""
         logger.info(f"Starting analysis for symbol: {symbol}, period: {period}")
         
@@ -45,7 +45,7 @@ class TechnicalAnalysisTools(BaseTool):
 
             result = f"Technical analysis for {symbol} has been completed."
             result += f"\n\nData summary:\n{data.describe()}"
-            result += f"\n\nLast 20 rows of data:\n{data.tail(20)}"
+            result += f"\n\nLast 20 rows of data:\n{data.tail(100)}"
 
             logger.info("Analysis completed successfully")
             return result
