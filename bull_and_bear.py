@@ -148,7 +148,9 @@ TA_analysis_task = Task(
 )
 # Define the hedge fund analysis task
 fund_analysis_task = Task(
-    description="""Analyze what is currently driving markets, identify risks, and identify trading opportunities""",
+    description="""Analyze what is currently driving markets, identify risks, and identify trading opportunities.  
+    Make note of the current month and date
+            and be sure that when you mention upcoming economic events they are actualy in the future""",
     expected_output="""Identify trade recommendations and risks.    """,
     agent=hedge_fund_analyst
 )

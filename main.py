@@ -15,13 +15,13 @@ from langchain_anthropic import ChatAnthropic
 ########------------------> INPUT FOLDER PATHS <------------------------
 # reminded------->reset dropbox api------>
 folder_paths = [
-    "<insert first folder name>",
-    "<insert second folder name>",
-    "insert third folder name"]
+    "/current/2024/september/sep 16/goldman/s&t",
+    "/current/2024/september/sep 16/nomura (mcelligott)",
+    "/current/2024/september/sep 16/bofa"
+    ]
 ########################################################################
 # add model in case we want to change the llm model or the temperature #
 # LLM_model=ChatOpenAI(model_name="gpt-4-turbo",temperature=0.7)
-# use claude as it gives much better results
 
 LLM_model = ChatAnthropic(
     model="claude-3-5-sonnet-20240620",
@@ -92,7 +92,8 @@ hedge_fund_analyst = Agent(
             2. What is the market outlook?
             3. Identify support and resistance levels.
             4. Identify any trade recommendations as well as risks.  Don't include risks from indicators being inaccurate.  
-            5. Provide a detailed and insightful analysis based on the information given.""",
+            5. Provide a detailed and insightful analysis based on the information given.  Make note of the current month and date
+            and be sure that when you mention upcoming economic events they are actualy in the future""",
     backstory="""You are a highly experienced financial analyst providing analysis and recommendations to traders. You have years of experience at 
     hedge funds and working on Wall Street. Analyze and summarize the following market report:
                     """ + pdf_content,
@@ -104,7 +105,9 @@ hedge_fund_analyst = Agent(
 # Create a writer agent
 writer = Agent (
     role = "Professional Finance Short-Article Writer",
-    goal = "Summarize market information from the hedge fund and technical analyst into concise actionable content.  ",
+    goal = """Summarize market information from the hedge fund and technical analyst into concise actionable content. 
+    Make note of the current month and date
+            and be sure that when you mention upcoming economic events they are actualy in the future """,
     backstory = """ You are a renowned financial writer a proven track record of summarizing the current market, risks, and identifying trading opportunities.  
     Your clients include professional buy side investors as well as retail investors and traders. """,
     verbose=True,
