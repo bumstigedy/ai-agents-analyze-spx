@@ -12,12 +12,8 @@ from ta_analysis_tool_ticker import TechnicalAnalysisTools
 #
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
-########------------------> INPUT FOLDER PATHS <------------------------
-# reminded------->reset dropbox api------>
-folder_paths = [
-    "/current/2024/september/sep 7/goldman/s&t",
-    "/current/2024/september/sep 7/bofa"
-    ]
+#
+from folders import folder_paths
 ########################################################################
 # add model in case we want to change the llm model or the temperature #
 # LLM_model=ChatOpenAI(model_name="gpt-4-turbo",temperature=0.7)
@@ -73,7 +69,8 @@ symbols_context = read_context('symbols.txt')
 # Create a Financial Analyst agent with context
 TA_analyst = Agent(
     role='Technical Analyst',
-    goal='Analyze technical indicators for a given ticker or symbol.',
+    goal="""Analyze technical indicators for a given ticker or symbol.  Be concious of the date and when quoting prices or indicator values pick the value from the date
+    closest to today. The data may be delayed by a day or two, but can still be considered current""",
     backstory="""You're an experienced financial analyst specializing in technical analysis.  You have years of experience on wall street adn are a Certified Market
      Technicial or CMT You are good at distilling techincal market indicators into concise market summaries that traders can understand
      and act on.  You recommend stops based on key support and resistance levels.  """ + ta_context + symbols_context,
@@ -91,7 +88,8 @@ hedge_fund_analyst = Agent(
             2. What is the market outlook?
             3. Identify support and resistance levels.
             4. Identify any trade recommendations as well as risks.  Don't include risks from indicators being inaccurate.  
-            5. Provide a detailed and insightful analysis based on the information given.""",
+            5. Provide a detailed and insightful analysis based on the information given.  Be aware of the current month and date
+            and be sure that trade recommendations are for the future.  """,
     backstory="""You are a highly experienced financial analyst providing analysis and recommendations to traders. You have years of experience at 
     hedge funds and working on Wall Street. Analyze and summarize the following market report:
                     """ + pdf_content,
@@ -104,7 +102,8 @@ hedge_fund_analyst = Agent(
 bull = Agent (
     role = "Buy side analyst",
     goal = """Utilize market information from the hedge fund and technical analyst to identify a bullish trade recommendation.  Identify potential entry points
-      and stops based on support levels from technical analysis.  """,
+      and stops based on support levels from technical analysis. Be aware of the current month and date
+            and be sure that trade recommendations are for the future. """,
     backstory = """ You are a renowned buy side analyst with a proven track record of identifying bullish trade recommendations.
      You have years of experience working on wall street. """,
     verbose=True,
@@ -117,7 +116,8 @@ bull = Agent (
 bear = Agent (
     role = "Buy side analyst",
     goal = """Utilize market information from the hedge fund and technical analyst to identify a bearish trade recommendation. Identify potential entry points
-     and stops based on resistance levels from technical analysis """,
+     and stops based on resistance levels from technical analysis.  Be aware of the current month and date
+            and be sure that trade recommendations are for the future. """,
     backstory = """ You are a renowned buy side analyst with a proven track record of identifying bearish trade recommendations.
      You have years of experience working on wall street. """,
     verbose=True,

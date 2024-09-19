@@ -12,13 +12,8 @@ from ta_analysis_tool import TechnicalAnalysisTools
 #
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
-########------------------> INPUT FOLDER PATHS <------------------------
-# reminded------->reset dropbox api------>
-folder_paths = [
-    "/current/2024/september/sep 16/goldman/s&t",
-    "/current/2024/september/sep 16/nomura (mcelligott)",
-    "/current/2024/september/sep 16/bofa"
-    ]
+#
+from folders import folder_paths
 ########################################################################
 # add model in case we want to change the llm model or the temperature #
 # LLM_model=ChatOpenAI(model_name="gpt-4-turbo",temperature=0.7)
@@ -74,9 +69,10 @@ ta_context = read_context('TA_context.txt')
 # Create a Financial Analyst agent with context
 TA_analyst = Agent(
     role='Technical Analyst',
-    goal='Analyze S&P 500 technical indicators',
-    backstory="""You're an experienced financial analyst specializing in technical analysis.  You have years of experience on wall street adn are a Certified Market
-     Technicial or CMT You are good at distilling techincal market indicators into concise market summaries that traders can understand
+    goal="""Analyze S&P 500 technical indicators.  Be concious of the date and when quoting prices or indicator values pick the value from the date
+    closest to today. The data may be delayed by a day or two, but can still be considered current """,
+    backstory="""You're an experienced financial analyst specializing in technical analysis.  You have years of experience on wall street and are
+    a Certified Market Technician or CMT You are good at distilling techincal market indicators into concise market summaries that traders can understand
      and act on""" + ta_context,
     tools=[TechnicalAnalysisTools()],
     llm =LLM_model
